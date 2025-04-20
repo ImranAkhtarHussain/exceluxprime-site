@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sacchetti Sottovuoto Excelux</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      background: #2d2d2d;
+      color: white;
+      padding: 1.5rem 2rem;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .product {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .product img {
+      max-width: 100%;
+      border-radius: 12px;
+    }
+
+    .details {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .details h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    .price {
+      font-size: 1.5rem;
+      color: #007b5e;
+      margin-bottom: 1rem;
+    }
+
+    .buy-button {
+      background: #007b5e;
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      width: fit-content;
+    }
+
+    .buy-button:hover {
+      background: #005f47;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .gallery img {
+      width: calc(33.33% - 1rem);
+      border-radius: 8px;
+    }
+
+    form {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      margin-top: 3rem;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    form button {
+      background: #007b5e;
+      color: white;
+      padding: 0.8rem 2rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background: #005f47;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #2d2d2d;
+      color: #ccc;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      .product {
+        flex-direction: column;
+      }
+
+      .gallery img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Excelux Sacchetti Sottovuoto</h2>
+    <p>Ottimizza lo spazio nel tuo armadio</p>
+  </header>
+
+  <div class="container">
+    <!-- Product Section -->
+    <div class="product">
+      <img src="product.jpg" alt="Sacchetti Sottovuoto Excelux" />
+      <div class="details">
+        <h1>Set 5 Sacchetti Sottovuoto per Vestiti - 60×40 cm</h1>
+        <p>I sacchetti sottovuoto Excelux sono perfetti per riporre abiti stagionali, viaggi e organizzazione domestica. Risparmia fino all'80% dello spazio!</p>
+        <ul>
+          <li>Set da 5 sacchetti - Misura 60×40 cm</li>
+          <li>Materiale resistente e riutilizzabile</li>
+          <li>Chiusura ermetica con doppia zip</li>
+          <li>Pompa a mano inclusa</li>
+        </ul>
+        <div class="price">€17,99</div>
+        <a href="https://www.paypal.com/tuo-link-di-pagamento" target="_blank">
+          <button class="buy-button">Acquista Ora</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Image Gallery Section -->
+    <div class="gallery">
+      <img src="gallery1.jpg" alt="Uso dei sacchetti" />
+      <img src="gallery2.jpg" alt="Prima e dopo" />
+      <img src="gallery3.jpg" alt="Sacchetti in valigia" />
+    </div>
+
+    <!-- Contact Form Section -->
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <h2>Contattaci</h2>
+      <input type="text" name="name" placeholder="Il tuo nome" required>
+      <input type="email" name="email" placeholder="La tua email" required>
+      <textarea name="message" rows="5" placeholder="Scrivi il tuo messaggio..." required></textarea>
+      <button type="submit">Invia</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 Excelux. Tutti i diritti riservati.
+  </footer>
+</body>
+</html>
